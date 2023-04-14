@@ -59,7 +59,7 @@ button:hover {
 }
 
 footer {
-  font-size: 14px;
+  font-size: clamp(12px, 3vw, 14px);
   padding-top: 60px;
   padding-bottom: 10px;
 }
@@ -86,7 +86,7 @@ footer a {
 
 .header_img {
   display: block;
-  width: clamp(200px, 40%, 400px);
+  width: clamp(200px, 80%, 600px);
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: 10px 8px 20px rgba(156, 145, 145, 0.2);
