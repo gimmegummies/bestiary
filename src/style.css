@@ -71,6 +71,11 @@ footer img {
 
 footer a {
   color: white;
+  transition: all 0.25s ease-in-out;
+}
+
+footer a:hover {
+  color: #7d0606;
 }
 
 .container {
