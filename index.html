@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ukrainian Bestiary</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="icon" type="image/x-icon" href="/media/fav.png" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img class="logo" src="/media/logo.png" alt="" />
+        <h1><strong>Ukrainian Bestiary</strong></h1>
+        <hr />
+        <h2>
+          Let us introduce you to “Ukrainian Bestiary” – a Mythology Artbook,
+          that will immerse you into the incredible world of Ukrainian Myths.
+        </h2>
+        <img class="header_img" src="/media/img1_.jpg" alt="book-cover" />
+      </header>
+      <main>
+        <p>
+          "Ukrainian Bestiary" is a book by a mysterious fictional researcher of
+          the spirits of Ukrainian mythology, documenting encounters with these
+          creatures. Each spread is dedicated to a creature, with several
+          illustrations and a brief description of it. 100 Ukrainian artists
+          took part in the creation, among whom 50 spirits were divided: two
+          illustrators share the spread, developing the concept art of the
+          creature and illustrations of its details and habits.
+          <br />
+          <br />
+          The artbook examines the creatures of lower mythology (demonology).
+          The spirits it contains could have been found not only on the
+          territory of Ukraine, but are considered from the point of view of
+          Ukrainian ethnography. The
+          <em
+            ><span class="important-info"
+              >artbook is not an ethnographic work</span
+            ></em
+          >
+          - some information or artistic interpretations may differ, but all
+          descriptions are based on existing ethnographic research.
+        </p>
+        <div class="img_library">
+          <div class="tooltip">
+            <span class="tooltip_text">Pesyholovets</span>
+            <a
+              target="_blank"
+              href="https://twitter.com/satellitehund/status/1608771112758018051"
+              ><img
+                class="img_library__item"
+                src="/media/img1.jpg"
+                alt="pesyholovtsi"
+              />
+            </a>
+          </div>
+          <div class="tooltip">
+            <span class="tooltip_text">Boginka</span>
+            <a
+              target="_blank"
+              href="https://twitter.com/turaev_alexey/status/1609135479919898625"
+            >
+              <img
+                class="img_library__item"
+                src="/media/img2_.jpg"
+                alt="boginka"
+            /></a>
+          </div>
+          <div class="tooltip">
+            <span class="tooltip_text">Svitylka</span>
+            <a
+              target="_blank"
+              href="https://twitter.com/nucl3arxxiv/status/1609495900082020354"
+              ><img
+                class="img_library__item"
+                src="/media/img3.jpg"
+                alt="svitylka"
+            /></a>
+          </div>
+          <div class="tooltip">
+            <span class="tooltip_text">Vovkulak</span>
+            <a
+              target="_blank"
+              href="https://twitter.com/kuttysarkart/status/1610681565113159680"
+              ><img
+                class="img_library__item"
+                src="/media/img4.jpg"
+                alt="vovkulak"
+            /></a>
+          </div>
+        </div>
+        <p>
+          You can learn more about the art project on the website
+          <a
+            href="https://maloviy.carrd.co/#en"
+            target="_blank"
+            class="maloviy_link"
+            >MAL'OVIY</a
+          >.
+        </p>
+        <div class="btn_container">
+          <button>Order now</button>
+        </div>
+      </main>
+      <footer>
+        <img src="/media/trident.png" alt="trident" />
+        Coded by
+        <a href="https://github.com/gimmegummies" target="_blank"
+          >Kseniia Rudenko</a
+        >
+      </footer>
+    </div>
+    <script>
+      function message(name, char) {
+        if (char.length == 0) {
+          alert(
+            `Hello, ${name}! You are now on our waiting list. As soon as the new edition is printed, we will contact you🧝‍♀️`
+          );
+        } else {
+          alert(
+            `Hello, ${name}, aka ${char}! You are now on our waiting list. As soon as the new edition is printed, we will contact you🧙‍♂️`
+          );
+        }
+      }
+
+      function makeOrder() {
+        let name = prompt("What is your name?");
+        let character = prompt(
+          "Who is your favorite mythical character"
+        ).toUpperCase();
+        message(name, character);
+      }
+
+      let orderBtn = document.querySelector("button");
+      orderBtn.addEventListener("click", makeOrder);
+    </script>
+  </body>
+</html>
